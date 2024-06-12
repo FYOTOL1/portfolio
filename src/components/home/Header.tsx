@@ -45,7 +45,7 @@ const Header = () => {
 
   return (
     <div className="flex items-center w-full bg-main-100 py-3 h-20">
-      <div className="container">
+      <div className="md:container px-3 md:p-0">
         <ul className="flex justify-center sm:justify-between flex-wrap gap-3 sm:gap-0 items-center w-full">
           {navbarRender}
         </ul>
