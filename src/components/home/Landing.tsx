@@ -29,7 +29,7 @@ const Landing = () => {
 
   return (
     <>
-      <div className="bg-main-100 h-screen max-h-[calc(100vh_-_80px)] pt-10">
+      <div className="bg-main-100 h-[400px] md:h-screen max-h-[calc(100vh_-_80px)] pt-10">
         <div className="container flex justify-between flex-row-reverse w-full h-full">
           <div className="relative flex justify-center h-full w-1/2">
             <img
