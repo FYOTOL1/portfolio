@@ -53,7 +53,7 @@ const AboutMe = () => {
 
   const renderMySkills = mySkills.map((e) => (
     <>
-      <div className="flex flex-col gap-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 text-text-100">
+      <div className="flex flex-col gap-2 w-full w-full md:w-1/3 lg:w-1/4 text-text-100">
         <div className="flex justify-between items-center capitalize">
           <p>{e.title}</p>
           <p>{e.rate + "%"}</p>
@@ -72,7 +72,11 @@ const AboutMe = () => {
     <div id="about_me" className="py-20 bg-main-200 w-full">
       <div className="container flex flex-col gap-20 w-full max-w-[1200px]">
         <div className="flex items-center gap-5 sm:gap-10 md:gp-20 lg:gap-30 xl:gap-40 text-xs sm:text-base md:text-lg lg:text-xl">
-          <img className="w-1/2 max-w-96" src="/landing.png" alt="Error" />
+          <img
+            className="w-1/2 max-w-[300xp]"
+            src="/thinking.png"
+            alt="Error"
+          />
           <div className="flex flex-col gap-5">
             <h1 className="AboutMe relative text-lg sm:text-3xl md:text-4xl text-text-200 font-semibold ms-9">
               About Me

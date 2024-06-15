@@ -1,6 +1,7 @@
 import Header from "@components/home/Header";
 import Landing from "@components/home/Landing";
 import AboutMe from "@components/home/AboutMe";
+import LastProjects from "@components/home/LastProjects";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Header />
       <Landing />
       <AboutMe />
+      <LastProjects />
     </div>
   );
 };
