@@ -53,7 +53,7 @@ const AboutMe = () => {
 
   const renderMySkills = mySkills.map((e) => (
     <>
-      <div className="flex flex-col gap-2 w-full w-full md:w-1/3 lg:w-1/4 text-text-100">
+      <div className="flex flex-col gap-2 w-full md:w-1/3 lg:w-1/4 text-text-100">
         <div className="flex justify-between items-center capitalize">
           <p>{e.title}</p>
           <p>{e.rate + "%"}</p>
