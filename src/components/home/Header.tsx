@@ -22,8 +22,8 @@ const Header = () => {
       className: "text-xs sm:text-sm md:text-base",
     },
     {
-      name: "some projects",
-      path: "#some_projects",
+      name: "last projects",
+      path: "#last_projects",
       className: "text-xs sm:text-sm md:text-base",
     },
     {

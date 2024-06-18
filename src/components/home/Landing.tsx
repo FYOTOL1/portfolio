@@ -48,7 +48,7 @@ const Landing = () => {
                 I'm <span className="text-text-200">Ahmed</span> Kamel
               </h1>
               <p className="text-xs sm:text-sm md:text-base">
-                I am a web developer with years of experience in developing,
+                I am a web developer with 3 years of experience in developing,
                 <br />
                 designing and creating web applications
               </p>
