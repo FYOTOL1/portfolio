@@ -39,7 +39,7 @@ const Header = () => {
         <h1 className="text-lg sm:text-3xl text-text-200 hover:text-opacity-100">
           Portfolio
         </h1>
-        <ul className="flex justify-between flex-wrap gap-2 sm:gap-0 items-center max-w-[300px] w-full ms-auto">
+        <ul className="flex justify-around flex-wrap gap-2 sm:gap-0 items-center max-w-[300px] w-full ms-auto">
           {navbarRender}
         </ul>
         <form method="GET" action="/cv.pdf">
