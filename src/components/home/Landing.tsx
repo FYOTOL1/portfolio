@@ -1,32 +1,6 @@
-type TSocialMediaLinks = {
-  icon: string;
-  link: string;
-};
+import SocialMediaIcons from "@components/common/SocialMediaIcons";
 
 const Landing = () => {
-  const socialMediaLinks: TSocialMediaLinks[] = [
-    {
-      icon: "fa-brands fa-facebook",
-      link: "https://www.facebook.com/profile.php?id=100090759159174",
-    },
-    {
-      icon: "fa-brands fa-instagram",
-      link: "https://www.instagram.com/ahmed.develop/",
-    },
-    {
-      icon: "fa-brands fa-linkedin",
-      link: "https://www.linkedin.com/in/ahmed-kamel-dev/",
-    },
-  ];
-
-  const socialMediaLinksRender = socialMediaLinks.map((e) => (
-    <>
-      <a href={e.link} rel="noopener noreferrer">
-        <i className={`${e.icon} text-2xl transition-all hover:opacity-70`}></i>
-      </a>
-    </>
-  ));
-
   return (
     <>
       <div className="bg-main-100 h-[400px] md:h-screen max-h-[calc(100vh_-_80px)] pt-10">
@@ -54,7 +28,7 @@ const Landing = () => {
               </p>
             </div>
             <div className="absolute left-0 bottom-5 flex items-center gap-5">
-              {socialMediaLinksRender}
+              <SocialMediaIcons />
             </div>
           </div>
         </div>

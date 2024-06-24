@@ -17,7 +17,7 @@ const ProjectCard = ({
 }: TLastProjects) => {
   return (
     <>
-      <div className="flex flex-col items-center gap-2 bg-main-100 w-1/2 md:w-1/3 h-60 shadow-main-200 shadow-lg p-5 pb-3 outline outline-1 outline-main-200">
+      <div className="flex flex-col items-center gap-2 bg-main-100 w-[80%] sm:w-1/2 md:w-1/3 h-60 shadow-main-200 shadow-lg p-5 pb-3 outline outline-1 outline-main-200">
         <i className={`${projectLogo} text-text-200 text-2xl opacity-80`}></i>
         <h1 className="md:text-base lg:text-xl font-semibold text-text-100">
           {projectName}

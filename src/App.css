@@ -16,3 +16,22 @@
 html {
   scroll-behavior: smooth;
 }
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+.UnderLineEffect::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: 12px;
+  height: 1.7px;
+  background: #333;
+  width: 0;
+  transition: width 0.1s linear;
+}
+
+.UnderLineEffect:hover::after {
+  width: calc(100% - 24px);
+  transition: width 0.1s linear;
+}
