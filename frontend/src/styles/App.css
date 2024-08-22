@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Hello::before,
+.AboutMe::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -35px;
+  height: 2px;
+  width: 30px;
+  background: #f5ce69;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+.UnderLineEffect::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: 12px;
+  height: 1.7px;
+  background: #333;
+  width: 0;
+  transition: width 0.1s linear;
+}
+
+.UnderLineEffect:hover::after {
+  width: calc(100% - 24px);
+  transition: width 0.1s linear;
+}
+
+.MyName::after {
+  content: "";
+  animation-name: MyNameAnim;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: steps(12);
+}
+
+.Line-Anim {
+  animation: LineAnim 0.25s infinite ease-in-out alternate;
+}
+
+@keyframes MyNameAnim {
+  0% {
+    content: "I";
+  }
+  8.33% {
+    content: "I'";
+  }
+  16.67% {
+    content: "I'm";
+  }
+  25% {
+    content: "I'm A";
+  }
+  33.33% {
+    content: "I'm Ah";
+  }
+  41.67% {
+    content: "I'm Ahm";
+  }
+  50% {
+    content: "I'm Ahme";
+  }
+  58.33% {
+    content: "I'm Ahmed";
+  }
+  66.67% {
+    content: "I'm Ahmed K";
+  }
+  75% {
+    content: "I'm Ahmed Ka";
+  }
+  83.33% {
+    content: "I'm Ahmed Kam";
+  }
+  91.67% {
+    content: "I'm Ahmed Kame";
+  }
+  100% {
+    content: "I'm Ahmed Kamel";
+  }
+}
+
+@keyframes LineAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
