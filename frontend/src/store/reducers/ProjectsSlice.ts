@@ -34,9 +34,9 @@ export const getAllProjects = createAsyncThunk<TProjectCard[]>(
   }
 );
 
-export const postProject = createAsyncThunk<TProjectCard[]>(
+export const postProject = createAsyncThunk(
   "ProjectSlice/postProject",
-  async (data, thunkApi) => {
+  async (data: TProjectCard, thunkApi) => {
     const { rejectWithValue } = thunkApi;
 
     try {

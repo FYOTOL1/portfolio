@@ -32,9 +32,9 @@ export const getAllMessages = createAsyncThunk<TMessage[]>(
   }
 );
 
-export const postMessage = createAsyncThunk<TMessage[]>(
+export const postMessage = createAsyncThunk(
   "MessagesSlice/postMessage",
-  async (data, thunkApi) => {
+  async (data: TMessage, thunkApi) => {
     const { rejectWithValue } = thunkApi;
 
     try {
