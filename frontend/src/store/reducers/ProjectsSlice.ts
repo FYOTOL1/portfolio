@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { TProjectCard } from "src/types/ProjectCardTypes";
 
-const API_BASE_URL = "http://localhost:3009";
+const API_BASE_URL = "https://portfolio-tw4n.onrender.com";
 
 type TInitialState = {
   data: TProjectCard[] | null;

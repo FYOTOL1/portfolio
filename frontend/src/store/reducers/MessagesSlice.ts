@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { TMessage } from "src/types/MessagesTypes";
 
-const API_BASE_URL = "http://localhost:3009";
+const API_BASE_URL = "https://portfolio-tw4n.onrender.com";
 
 type TInitialState = {
   data: TMessage[] | null;
