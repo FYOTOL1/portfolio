@@ -32,9 +32,9 @@ export const getAllSkills = createAsyncThunk<TSkillType[]>(
   }
 );
 
-export const postSkill = createAsyncThunk<TSkillType[]>(
+export const postSkill = createAsyncThunk(
   "SkillsSlice/postSkill",
-  async (data, thunkApi) => {
+  async (data: TSkillType, thunkApi) => {
     const { rejectWithValue } = thunkApi;
 
     try {
