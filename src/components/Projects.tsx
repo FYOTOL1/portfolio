@@ -71,7 +71,11 @@ function Projects() {
       <div>
         {projects.map((e) => (
           <div className="pb-10">
-            <img className="w-full" src={`/${e.imgUrl}`} alt="Error" />
+            <img
+              className="w-full min-h-28.25"
+              src={`/${e.imgUrl}`}
+              alt="Error"
+            />
 
             <div className="flex items-start justify-between pt-4.5 pb-5">
               <div className="flex w-full">
