@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f1eadc;
+  --color-ink: #171714;
+  --color-orange: #d9572b;
+  --color-sand: #d5c9b6;
+  --color-line: rgba(23, 23, 20, 0.28);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background: var(--color-cream);
+    color: var(--color-ink);
+    font-family: "Manrope", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button,
+  a {
+    color: inherit;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.hero-stamp text {
+  letter-spacing: 1.2px;
+  font:
+    8.5px DM Mono,
+    monospace;
+}
+
+.stack-date {
+  font-family: DM Mono Light;
+}
